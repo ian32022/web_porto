@@ -10,10 +10,10 @@
 
 <nav>
     <ul class="nav-links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="tentangsaya.html" class="active">Tentang Saya</a></li>
-        <li><a href="skill.html">Skills</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
+       <li><a href="index.html" data-lang-id="Beranda" data-lang-en="Home">Beranda</a></li>
+        <li><a href="tentangsaya.html" data-lang-id="Tentang Saya" data-lang-en="About Me">Tentang Saya</a></li>
+        <li><a href="skill.html" data-lang-id="Skills" data-lang-en="Skills">Skills</a></li>
+        <li><a href="kontak.html" data-lang-id="Kontak" data-lang-en="Contact">Kontak</a></li>
     </ul>
      <div class="nav-controls">
             <button class="control-btn" onclick="toggleTheme()" title="Toggle Theme">🌓</button>
@@ -23,7 +23,7 @@
 <div id="languageModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 data-lang-id="modal-title" data-lang-en="Select Language">Pilih Bahasa</h3>
+                <h3 data-lang-id="modal-title" data-lang-en="Select Language" data-lang-en="Pilih Bahasa">Pilih Bahasa</h3>
                 <button class="close-modal" onclick="closeLanguageModal()">×</button>
             </div>
             <div class="language-option" onclick="changeLanguage('id')">
@@ -48,10 +48,13 @@
             
             <div class="summary">
                 <h3 data-lang-id="profile-title" data-lang-en="My Profile">Profil Saya</h3>
-                <p style="line-height: 1.8; color: var(--text-secondary);" data-lang-id="profile-text1" data-lang-en="I am an Information Systems student at Telkom University Purwokerto with consistent academic achievements (GPA 3.78). My passion lies in developing efficient information systems and optimal database management. I believe that information technology can be a solution to optimize business processes and increase organizational productivity.">
+                <p style="line-height: 1.8; color: var(--text-secondary);" data-lang-id="profile-text1" data-lang-en="I am an Information Systems student at Telkom University Purwokerto with consistent academic achievements (GPA 3.78). My passion lies in developing efficient information systems and optimal database management. I believe that information technology can be a solution to optimize business processes and increase organizational productivity."
+                data-lang-id="profile-text2" data-lang-en="Saya adalah mahasiswa Sistem Informasi di Telkom University Purwokerto dengan prestasi akademik yang konsisten (IPK 3,78). Passion saya terletak pada pengembangan sistem informasi yang efisien dan manajemen basis data yang optimal. Saya percaya bahwa teknologi informasi dapat menjadi solusi untuk mengoptimalkan proses bisnis dan meningkatkan produktivitas organisasi."
+                >
                     Saya adalah mahasiswa Sistem Informasi di Telkom University Purwokerto dengan prestasi akademik yang konsisten (IPK 3,78). Passion saya terletak pada pengembangan sistem informasi yang efisien dan manajemen basis data yang optimal. Saya percaya bahwa teknologi informasi dapat menjadi solusi untuk mengoptimalkan proses bisnis dan meningkatkan produktivitas organisasi.
                 </p>
-                <p style="line-height: 1.8; color: var(--text-secondary); margin-top: 1rem;" data-lang-id="profile-text2" data-lang-en="In addition to academics, I am active in student organizations and have practical experience in mentoring junior students. I continue to develop my technical skills through self-learning and challenging practical projects.">
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-top: 1rem;" data-lang-id="profile-text2" data-lang-en="In addition to academics, I am active in student organizations and have practical experience in mentoring junior students. I continue to develop my technical skills through self-learning and challenging practical projects."
+                data-lang-id="profile-text2" data-lang-en="Selain akademik, saya aktif dalam organisasi kemahasiswaan dan memiliki pengalaman praktis dalam membimbing mahasiswa junior. Saya terus mengembangkan kemampuan teknis saya melalui pembelajaran mandiri dan proyek-proyek praktis yang menantang.">
                     Selain akademik, saya aktif dalam organisasi kemahasiswaan dan memiliki pengalaman praktis dalam membimbing mahasiswa junior. Saya terus mengembangkan kemampuan teknis saya melalui pembelajaran mandiri dan proyek-proyek praktis yang menantang.
                 </p>
             </div>
@@ -64,9 +67,15 @@
                     <h3 data-lang-id="exp1-title" data-lang-en="Database Systems Practicum Assistant">Asisten Praktikum Sistem Basis Data</h3>
                     <p style="color: var(--accent-secondary);">Telkom University Purwokerto | Sep 2025 – Jan 2026</p>
                     <ul>
-                        <li data-lang-id="exp1-desc1" data-lang-en="Guide students in database architecture design and advanced MySQL query implementation">Membimbing mahasiswa dalam perancangan arsitektur database dan implementasi query MySQL tingkat lanjut</li>
-                        <li data-lang-id="exp1-desc2" data-lang-en="Ensure data validity and database structure optimization in practicum environment">Memastikan validitas data dan optimasi struktur basis data dalam lingkungan praktikum</li>
-                        <li data-lang-id="exp1-desc3" data-lang-en="Integrate tools such as XAMPP and Git in student database development workflow">Mengintegrasikan alat bantu seperti XAMPP dan Git dalam alur kerja pengembangan basis data mahasiswa</li>
+                        <li data-lang-id="exp1-desc1" data-lang-en="Guide students in database architecture design and advanced MySQL query implementation"
+                        data-lang-en=" Membimbing mahasiswa dalam perancangan arsitektur database dan implementasi query MySQL tingkat lanjut">
+                        Membimbing mahasiswa dalam perancangan arsitektur database dan implementasi query MySQL tingkat lanjut</li>
+                        <li data-lang-id="exp1-desc2" data-lang-en="Ensure data validity and database structure optimization in practicum environment"
+                        data-lang-en="Memastikan validitas data dan optimasi struktur basis data dalam lingkungan praktikum"
+                        >Memastikan validitas data dan optimasi struktur basis data dalam lingkungan praktikum</li>
+                        <li data-lang-id="exp1-desc3" data-lang-en="Integrate tools such as XAMPP and Git in student database development workflow"
+                        data-lang-en="Mengintegrasikan alat bantu seperti XAMPP dan Git dalam alur kerja pengembangan basis data mahasiswa"
+                        >Mengintegrasikan alat bantu seperti XAMPP dan Git dalam alur kerja pengembangan basis data mahasiswa</li>
                     </ul>
                 </div>
             </div>
@@ -77,9 +86,15 @@
                     <h3 data-lang-id="exp2-title" data-lang-en="Entrepreneur Staff">Staf Entrepreneur</h3>
                     <p style="color: var(--accent-secondary);" data-lang-id="exp2-org" data-lang-en="Information Systems Student Association (HMSI) | 2025">Himpunan Mahasiswa Sistem Informasi (HMSI) | 2025</p>
                     <ul>
-                        <li data-lang-id="exp2-desc1" data-lang-en="Manage organizational business units including inventory management and sales of goods and services to students">Mengelola unit usaha organisasi yang mencakup manajemen inventaris serta penjualan barang dan jasa kepada mahasiswa</li>
-                        <li data-lang-id="exp2-desc2" data-lang-en="Responsible for systematically recording financial transactions and customer data to support association fund transparency">Bertanggung jawab atas pencatatan transaksi keuangan dan data pelanggan secara sistematis untuk mendukung transparansi dana himpunan</li>
-                        <li data-lang-id="exp2-desc3" data-lang-en="Successfully raised funds through creative sales strategies that impacted the sustainability of organizational work programs">Berhasil menggalang dana melalui strategi penjualan kreatif yang berdampak pada keberlangsungan program kerja organisasi</li>
+                        <li data-lang-id="exp2-desc1" data-lang-en="Manage organizational business units including inventory management and sales of goods and services to students"
+                        data-lang-en="Mengelola unit usaha organisasi yang mencakup manajemen inventaris serta penjualan barang dan jasa kepada mahasiswa"
+                        >Mengelola unit usaha organisasi yang mencakup manajemen inventaris serta penjualan barang dan jasa kepada mahasiswa</li>
+                        <li data-lang-id="exp2-desc2" data-lang-en="Responsible for systematically recording financial transactions and customer data to support association fund transparency"
+                        data-lang-en="Bertanggung jawab atas pencatatan transaksi keuangan dan data pelanggan secara sistematis untuk mendukung transparansi dana himpunan"
+                        >Bertanggung jawab atas pencatatan transaksi keuangan dan data pelanggan secara sistematis untuk mendukung transparansi dana himpunan</li>
+                        <li data-lang-id="exp2-desc3" data-lang-en="Successfully raised funds through creative sales strategies that impacted the sustainability of organizational work programs"
+                        data-lang-en="Berhasil menggalang dana melalui strategi penjualan kreatif yang berdampak pada keberlangsungan program kerja organisasi"
+                        >Berhasil menggalang dana melalui strategi penjualan kreatif yang berdampak pada keberlangsungan program kerja organisasi</li>
                     </ul>
                 </div>
             </div>
@@ -89,10 +104,11 @@
             <div class="education-item">
                 <div class="item-image">🏛️</div>
                 <div class="item-content">
-                    <h3 data-lang-id="edu-title" data-lang-en="Bachelor of Information Systems">S1 Sistem Informasi</h3>
-                    <p style="color: var(--accent-secondary);" data-lang-id="edu-period" data-lang-en="Telkom University Purwokerto | 2023 - Present">Telkom University Purwokerto | 2023 - Sekarang</p>
+                    <h3 data-lang-id="edu-title" data-lang-en="Bachelor of Information Systems" data-lang-en="S1 Sistem Informasi">S1 Sistem Informasi</h3>
+                    <p style="color: var(--accent-secondary);" data-lang-id="edu-period" data-lang-en="Telkom University Purwokerto | 2023 - Present" data-lang-en="Telkom University Purwokerto | 2023 - Sekarang">Telkom University Purwokerto | 2023 - Sekarang</p>
                     <p style="color: var(--text-secondary); margin-top: 0.5rem;"><strong>IPK: 3.78/4.00</strong></p>
-                    <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;" data-lang-id="edu-desc" data-lang-en="Focus on information systems development, database management, and software engineering. Active in student organizations and participate in various practicum projects to hone technical skills.">
+                    <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;" data-lang-id="edu-desc" data-lang-en="Focus on information systems development, database management, and software engineering. Active in student organizations and participate in various practicum projects to hone technical skills."
+                    data-lang-en="Fokus pada pengembangan sistem informasi, manajemen basis data, dan rekayasa perangkat lunak. Aktif dalam organisasi kemahasiswaan dan mengikuti berbagai proyek praktikum untuk mengasah kemampuan teknis."> 
                         Fokus pada pengembangan sistem informasi, manajemen basis data, dan rekayasa perangkat lunak. Aktif dalam organisasi kemahasiswaan dan mengikuti berbagai proyek praktikum untuk mengasah kemampuan teknis.
                     </p>
                 </div>
