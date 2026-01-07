@@ -1,8 +1,10 @@
-{
+
+            * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
 
         :root {
             --bg-primary: linear-gradient(135deg, #0a1929 0%, #1a365d 100%);
@@ -45,6 +47,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             box-shadow: 0 4px 6px var(--shadow);
             display: flex;
@@ -209,6 +212,7 @@
             background: var(--bg-card);
             border-radius: 15px;
             padding: 1.5rem;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid var(--border-color);
             height: fit-content;
@@ -231,6 +235,7 @@
             background: var(--bg-card);
             border-radius: 15px;
             padding: 2rem;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid var(--border-color);
         }
@@ -285,6 +290,7 @@
             background: var(--bg-card);
             padding: 1.5rem;
             border-radius: 10px;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid var(--border-color);
         }
@@ -353,6 +359,7 @@
             background: var(--bg-card);
             padding: 2rem;
             border-radius: 15px;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid var(--border-color);
         }
