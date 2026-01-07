@@ -15,17 +15,62 @@
         <li><a href="skill.html">Skills</a></li>
         <li><a href="kontak.html" class="active">Kontak</a></li>
     </ul>
-    <button class="control-btn" onclick="toggleTheme()">🌓</button>
+     <div class="nav-controls">
+            <button class="control-btn" onclick="toggleTheme()" title="Toggle Theme">🌓</button>
+            <button class="control-btn" onclick="openLanguageModal()" title="Change Language">🌐</button>
+        </div>
 </nav>
-
-<div class="container">
-    <div class="card">
-        <h2>Kontak</h2>
-        <p>📞 0812-3519-0296</p>
-        <p>✉️ christianhanlyrimbun@gmail.com</p>
-        <p>💼 LinkedIn: christian-hanly-rimbun</p>
+<div id="languageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-lang-id="modal-title" data-lang-en="Select Language">Pilih Bahasa</h3>
+                <button class="close-modal" onclick="closeLanguageModal()">×</button>
+            </div>
+            <div class="language-option" onclick="changeLanguage('id')">
+                <span style="font-size: 2rem;">🇮🇩</span>
+                <div>
+                    <strong>Bahasa Indonesia</strong>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Indonesian</p>
+                </div>
+            </div>
+            <div class="language-option" onclick="changeLanguage('en')">
+                <span style="font-size: 2rem;">🇬🇧</span>
+                <div>
+                    <strong>English</strong>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">English</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+<div id="kontak" class="section">
+            <div class="contact-section">
+                <h2 data-lang-id="contact-title" data-lang-en="Contact Me">Hubungi Saya</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;" data-lang-id="contact-desc" data-lang-en="I am open to discussions regarding work opportunities, projects, or just discussing technology. Don't hesitate to contact me through one of the following channels:">
+                    Saya terbuka untuk diskusi mengenai peluang kerja sama, proyek, atau sekadar berdiskusi tentang teknologi. Jangan ragu untuk menghubungi saya melalui salah satu channel berikut:
+                </p>
+
+                <div class="contact-links">
+                    <div class="contact-link">
+                        <strong style="color: var(--accent-primary);" data-lang-id="phone-label" data-lang-en="📞 Phone Number">📞 Nomor Telepon</strong><br>
+                        <a href="tel:+6281235190296">+62 812-3519-0296</a>
+                    </div>
+
+                    <div class="contact-link">
+                        <strong style="color: var(--accent-primary);">✉️ Email</strong><br>
+                        <a href="mailto:christianhanlyrimbun@gmail.com">christianhanlyrimbun@gmail.com</a>
+                    </div>
+
+                    <div class="contact-link">
+                        <strong style="color: var(--accent-primary);">💼 LinkedIn</strong><br>
+                        <a href="https://www.linkedin.com/in/christian-hanly-rimbun" target="_blank" rel="noopener noreferrer">linkedin.com/in/christian-hanly-rimbun</a>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.9rem;" data-lang-id="linkedin-note" data-lang-en="(Please adjust to your LinkedIn URL)">
+                            (Silakan sesuaikan dengan URL LinkedIn Anda)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <script src="assets/js/script.js"></script>
 </body>
